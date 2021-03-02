@@ -7,15 +7,20 @@
     <title>Document</title>
 </head>
 <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+    
 .nav-bartop {
-  background-color: #0C5959;
+  background-color: #F24452;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Set the style inside the navbar tag */
 .nav-bartop  a {
   float: right;
-  color: #f2f2f2;
+  color: #021826;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -33,12 +38,73 @@
   background-color: #24BFB0;
   color: red;
 }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*use opacity in the footer section to make the opacity: 0.7; so that some text color visibility is hidden*/
+/*also add some box shadow to some elements and give them some ni touch*/
 </style>
 <body>
+    <!--This is the navbar that will be displayed on top of the page --> 
     <div class="nav-bartop">
-        <a class="active" href="#home">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>     
+        <!--Put your logo here and place it to your left side of the navbar --> 
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <a href="#Projects">Projects</a>
+        <a href="#Profile">About</a>
+        <a href="#contact">Contact</a>        
+      </div>  
+
+      <!--This is the sidebar that will be displayed on the side of the page --> 
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Profile</a>
+        <a href="#">Projects</a>
+        <a href="#">Published</a>
+        <a href="#">Recommendations</a>
+      </div> 
+      
+
 </body>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </html>
