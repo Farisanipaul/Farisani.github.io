@@ -15,6 +15,7 @@
   
   
     .fullCard {
+        margin: 0rem auto;
         width: 80%;
         border: 1px solid #ccc;
         border-radius: 5px;
