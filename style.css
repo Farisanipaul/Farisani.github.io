@@ -1,8 +1,9 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
-        background: white;
-        color: black;
         text-align: center;
+        background-color: #f9f3f3;
+        color: #f6f6f6;
+        z-index: -1;
     }
 
     .navbar {
@@ -32,6 +33,7 @@
         width: 100%;
         height: 40vh;
         border: 1px solid black;
+        background-color: #91091e;
         border-radius: 5px;
         margin: auto;
         padding: 4px;
@@ -54,7 +56,7 @@
   
     .fullCard {
         margin: 0rem auto;
-        width: 100%;
+        width: 80%;
         border: 1px solid #ccc;
         border-radius: 5px;
         margin-top: 50px;
@@ -66,6 +68,7 @@
         justify-content: center;
         align-items: center;    
         height: 100vh;      
+        background-color: #5b5b5b;
     }
     
     
