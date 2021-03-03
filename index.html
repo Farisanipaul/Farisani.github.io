@@ -4,165 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>    
     <title>Document</title>
 </head>
 
-<style>
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-        
-    .nav-bartop {
-        background-color: #F24452;
-        overflow: hidden;
-    }
-
-    /* Set the style inside the navbar tag */
-    .nav-bartop  a {
-        float: right;
-        color: #021826;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    /* Change the color of links on hover */
-    .nav-bartop  a:hover {
-        background-color: #F2A71B;
-        color: black;
-    }
-
-    /* Add a color to the active/current link */
-    .nav-bartop  a.active {
-        background-color: #24BFB0;
-        color: red;
-    }
-
-    /* Styles for the side bar nav*/
-    .sidenav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #033A40;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    /* Change the color of links on hover */
-    .sidenav a:hover {
-        color: #f1f1f1;
-        background-color: #F2A71B;  
-    }
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    /*This is where all the stuff about the header goes to as well as the part that controls*/
-    .header {
-        background-color: #033A40;
-        padding: 30px;
-        text-align: center;
-        color: #f1f1f1;
-        height: 50vh;
-        font-size: 17px;
-    }    
-    .content {
-        padding: 16px;
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    .sticky + .content {
-        padding-top: 60px;
-    }
-    /*use opacity in the footer section to make the opacity: 0.7; so that some text color visibility is hidden*/
-    /*also add some box shadow to some elements and give them some ni touch*/
-</style>
-
 <body>
-    <!--This is the welcome section of the whole website -->    
-    <div class="header">
-        <h1>Welcome to Farisani Portfolio Page</h1>
-        <h2>Scroll down to see more about me</h2>
+    <!--Create a div to hold the title block of your blog-->    
+    <div class="title-block">
+       <h1>Welcome to Farisani Portfolio</h1>
     </div>
 
-    <!--This is the navbar that will be displayed on top of the page --> 
-    <div id= "nav-bartop" class="nav-bartop">
-        <!--Put your logo here and place it to your left side of the navbar --> 
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-        <a href="#Projects">Projects</a>
-        <a href="#Profile">About</a>
-        <a href="#contact">Contact</a>        
+    <!--Create a div to hold your image-->    
+    <div class="img-div">
+        <img class="cat-image"
+        src="Images/Farisani_image.jpg" alt="Cat Project">
+    </div>
+
+    <!--Create the card to hold all the content of the blog-->
+    <div class="fullCard">
+    <div class="intro-block">
+
+        <h2>Introduction</h2>
+        <p>Today I learnt a lot and I was able to identify some of the mistakes I made yesterday. I also learned about adding style to html elements. I also learned new things which inlclude: </p>
+        
+        <ul>
+        <li>How to make a shadow around a div tag including images buy using an ancher tag. If you check the imaage and also the text you will notice the boxes and shadows around them</li>
+        <li>How to change color of text when hovering over it. Try moving cursor around the title of the blog, the text immediately changes color to red</li>
+        <li></li>
+        </ul>
+
+    </div>
+      
+    <div class="discussion">
+
+        <h3>Hovering</h3>
+        <p>I realised that not going through an example before answering on freecodecamp becomes a challenge to answer questions. I took my time and learn how to <a href="#">Hover</a> around text elements</p>
+        
+        <div class="box-shade">
+            <h3>Box-Shadow</h3>
+            <p>For this part I was able to understand how to make a box and a shadow by going through the example</p>
+        </div>
+
+        <h3>Typing</h3>
+        <p>I have come to the conclusion that I have to improve my typing skills and as well as use appropriate font and use <em>italics</em> and make words to be <strong>Bold</strong> and also <u>underline</u> and add <s>strikethrough</s> on text</p>
+        <h3>Blogging</h3>
+        <p>The blogging part is not an easy part as you need to use what you are learning to construct your blog.</p>
+
     </div>  
 
-    <!--This is the sidebar that will be displayed on the side of the page --> 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Profile</a>
-        <a href="#">Projects</a>
-        <a href="#">Published</a>
-        <a href="#">Recommendations</a>
-    </div> 
- 
-    <!--Content of the page here --> 
-    <div class="content">
-        <h3>Sticky Navigation Example</h3>
-        <p>The navbar will stick to the top when you reach its scroll position.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    </div>      
-
-</body>
-
-<script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+    <div class="challenge-box">
+      <h2>Challenges faced</h2>
+      <p>It took me a very long time to understand how a div works and how to edit it in the style section but I didn't give up on it. I went through the example until I could understand it. After struggling with div I took some time off and practised typing. At first it was easy because I had not included many alphabets but as I added more alphabets I was typing slowly than before but I want to spend more time typing so that I can become better</p>
+    </div>
+    </div>
+    </body>
     
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-
-    window.onscroll = function() {scrollFunction()};
-
-    var navbar = document.getElementById("nav-bartop");
-    var sticky = navbar.offsetTop;
-
-    function scrollFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}    
-</script>
-</html>
