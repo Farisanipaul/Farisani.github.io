@@ -14,6 +14,7 @@
         width: 100%;
         display: flex;
         justify-content:center;
+        height: 10vh;
     }
       
     .navbar a {
@@ -24,6 +25,7 @@
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
+        margin-top: 1rem;
     }
       
     .navbar a:hover {
@@ -90,7 +92,7 @@
         color: red;
     }
   
-    .contacts-section{
+    .intro-block{
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
@@ -114,8 +116,8 @@
         height: 40vh;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;            
+        justify-content:space-evenly;
+         
     }
 
     .bottom-section a {
@@ -136,12 +138,37 @@
         color: black;
     }       
 
-    
-  
-    @keyframes change-scale {
-        100% {
-        width: 60%;}
+    .bottom-section p{
+        text-align:center;
     }
 
+    .bottom-section i{
+        margin-right: 1rem;
+    }
+
+    .fa-facebook-square {
+        color: #09015f;
+    }
+
+    .fa-instagram {
+        color: #ffab73;
+    }
+
+    .fa-github-square {
+        color: black;
+    }
+
+    .align-items-correctly{
+        display: table-cell;
+        margin-top: 2rem;
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width:800px) {
+        .fullCard, .intro-block, .discussion {
+        width:auto; /* The width is 100%, when the viewport is 800px or smaller */
+        height: auto;
+        }
+    }
 
 
