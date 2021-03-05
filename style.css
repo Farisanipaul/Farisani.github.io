@@ -169,6 +169,9 @@
         width:auto; /* The width is 100%, when the viewport is 800px or smaller */
         height: auto;
         }
+        .bottom-section{
+            overflow-y: scroll;
+        }
     }
 
 
