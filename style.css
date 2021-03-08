@@ -1,9 +1,12 @@
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Vollkorn', serif;
+        font-size: 1.1rem;
         text-align: center;
         background-color: #f9f3f3;
         color: #f6f6f6;
         z-index: -1;
+        margin: 0%;
+        padding: 0%;
     }
 
     .navbar {
@@ -80,7 +83,7 @@
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
-        width: 600px;
+        width: 700px;
         margin: auto;
     }
   
@@ -92,19 +95,11 @@
         color: red;
     }
   
-    .intro-block{
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
-        width: 600px;
-        margin: auto;
-    }
-  
     .discussion{
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
-        width: 600px;
+        width: 700px;
         margin: auto;
     }
 
